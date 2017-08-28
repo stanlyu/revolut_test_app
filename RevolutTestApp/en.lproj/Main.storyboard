@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Za7-kp-pno">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Currencies Exchange View Controller-->
+        <scene sceneID="akU-Wa-bDm">
+            <objects>
+                <tableViewController id="ddP-BQ-SDB" userLabel="Currencies Exchange View Controller" customClass="RTACurrencyExchangeViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="1" sectionFooterHeight="1" id="puz-ag-TIv">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.49019607840000001" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RTACurrencyAccountsCell" rowHeight="150" id="Y9u-e1-qe4" userLabel="Currency Accounts Cell" customClass="RTACurrencyAccountsCell">
+                                <rect key="frame" x="0.0" y="1" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y9u-e1-qe4" id="DAL-aq-6O3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xG8-Ib-R8g" userLabel="carusel view" customClass="iCarousel">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="Y9u-e1-qe4" id="HXW-fg-jLd"/>
+                                                <outlet property="delegate" destination="Y9u-e1-qe4" id="mLJ-g8-2YZ"/>
+                                            </connections>
+                                        </view>
+                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xWo-m4-qcX">
+                                            <rect key="frame" x="183.5" y="113" width="39" height="37"/>
+                                            <connections>
+                                                <action selector="pageControlDidValueChange:" destination="Y9u-e1-qe4" eventType="valueChanged" id="xch-PY-ShC"/>
+                                            </connections>
+                                        </pageControl>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="xWo-m4-qcX" firstAttribute="centerX" secondItem="DAL-aq-6O3" secondAttribute="centerX" constant="15.5" id="D8r-99-9M4"/>
+                                        <constraint firstAttribute="bottom" secondItem="xWo-m4-qcX" secondAttribute="bottom" id="q2D-vj-3RS"/>
+                                        <constraint firstItem="xG8-Ib-R8g" firstAttribute="leading" secondItem="DAL-aq-6O3" secondAttribute="leading" id="tBq-96-46z"/>
+                                        <constraint firstItem="xG8-Ib-R8g" firstAttribute="top" secondItem="DAL-aq-6O3" secondAttribute="top" id="uBs-fs-1vy"/>
+                                        <constraint firstAttribute="trailing" secondItem="xG8-Ib-R8g" secondAttribute="trailing" id="xgn-Kd-HFJ"/>
+                                        <constraint firstItem="xWo-m4-qcX" firstAttribute="top" secondItem="xG8-Ib-R8g" secondAttribute="bottom" id="zVI-dg-Fcf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="carouselView" destination="xG8-Ib-R8g" id="LiY-4I-vkk"/>
+                                    <outlet property="pageControl" destination="xWo-m4-qcX" id="ULV-Mp-Tdj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ddP-BQ-SDB" id="yuw-RZ-LIR"/>
+                            <outlet property="delegate" destination="ddP-BQ-SDB" id="fJS-Mc-U32"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3ev-gN-F4p">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Exchange" id="fHB-Qt-Jme">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="barButtonItemDidTap:" destination="ddP-BQ-SDB" id="ABf-kV-zms"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kW2-3X-RBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143.19999999999999" y="-243.32833583208398"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IGO-aP-2NG">
+            <objects>
+                <navigationController id="Za7-kp-pno" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="uX1-ZU-MGh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.49019607840000001" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.49019607840000001" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ddP-BQ-SDB" kind="relationship" relationship="rootViewController" id="oDR-yb-hYo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yv1-N6-cBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1551" y="-36"/>
+        </scene>
+    </scenes>
+</document>

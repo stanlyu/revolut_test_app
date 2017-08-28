@@ -1,0 +1,29 @@
+//
+//  RevoluteTestApp_Prefix.pch
+//  RevolutTestApp
+//
+//  Created by Stanislav on 07.09.17.
+//  Copyright © 2017 LSV. All rights reserved.
+//
+
+#ifndef RevoluteTestApp_Prefix_pch
+#define RevoluteTestApp_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "NSDecimalNumber+Comparison.h"
+#import "NSNumber+NSDecimalNumber.h"
+#import "UIView+Reusable.h"
+#import "RTARevolutService.h"
+#import "UIColor+RTADesign.h"
+#import "RTABlockerController.h"
+#import "NSDecimalNumber+Addition.h"
+#import "RTANumberFormatter.h"
+#import "NSError+RTA.h"
+#import "NSString+NSDecimalNumber.h"
+
+#define RTAFailureAssert(desc, ...) NSAssert(NO, desc, __VA_ARGS__)
+#define DN(a) ((@(a)).decimalNumber)
+
+#endif /* RevoluteTestApp_Prefix_pch */

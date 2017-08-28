@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E378BBBE4A80720D3CEEDB1 /* Pods_RevolutTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D6D183CB71CCA25F661F4A /* Pods_RevolutTestApp.framework */; };
+		EC46FE171F5458EB00A71521 /* RTACurrencyImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = EC46FE161F5458EB00A71521 /* RTACurrencyImpl.m */; };
+		EC46FE1B1F56F96100A71521 /* RTARevolutService.m in Sources */ = {isa = PBXBuildFile; fileRef = EC46FE1A1F56F96100A71521 /* RTARevolutService.m */; };
+		EC46FE421F57F77000A71521 /* RTACurrencyAccountImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = EC46FE411F57F77000A71521 /* RTACurrencyAccountImpl.m */; };
+		EC46FE461F58279800A71521 /* NSDecimalNumber+Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = EC46FE451F58279800A71521 /* NSDecimalNumber+Comparison.m */; };
+		EC46FE4E1F58517C00A71521 /* RevolutTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC46FE4D1F58517C00A71521 /* RevolutTestAppTests.m */; };
+		EC46FE551F58570500A71521 /* RTACurrencyAccountImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = EC46FE411F57F77000A71521 /* RTACurrencyAccountImpl.m */; };
+		EC46FE581F585EE700A71521 /* NSNumber+NSDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = EC46FE571F585EE700A71521 /* NSNumber+NSDecimalNumber.m */; };
+		EC792DD01F6435F300B09134 /* UIColor+RTADesign.m in Sources */ = {isa = PBXBuildFile; fileRef = EC792DCF1F6435F300B09134 /* UIColor+RTADesign.m */; };
+		EC855F231F6BF8E3002FBE57 /* NSDecimalNumber+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC855F221F6BF8E3002FBE57 /* NSDecimalNumber+Addition.m */; };
+		EC855F291F6C29A6002FBE57 /* RTANumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC855F281F6C29A6002FBE57 /* RTANumberFormatter.m */; };
+		EC855F2F1F6D0EDF002FBE57 /* RTACurrencyAccountsCell+UIKeyInput.m in Sources */ = {isa = PBXBuildFile; fileRef = EC855F2E1F6D0EDF002FBE57 /* RTACurrencyAccountsCell+UIKeyInput.m */; };
+		EC855F361F6D2E79002FBE57 /* RTAExchangeInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC855F351F6D2E79002FBE57 /* RTAExchangeInformationCell.m */; };
+		EC90F6CD1F595722009C6991 /* RTACurrencyAccountsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC90F6CC1F595722009C6991 /* RTACurrencyAccountsCell.m */; };
+		EC90F6D01F61140B009C6991 /* RTACurrencyAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC90F6CF1F61140B009C6991 /* RTACurrencyAccountView.m */; };
+		EC90F6D21F611424009C6991 /* RTACurrencyAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC90F6D11F611424009C6991 /* RTACurrencyAccountView.xib */; };
+		EC90F6D51F613652009C6991 /* UIView+Reusable.m in Sources */ = {isa = PBXBuildFile; fileRef = EC90F6D41F613652009C6991 /* UIView+Reusable.m */; };
+		EC90F6D91F6286FE009C6991 /* RTAExchangeOperationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = EC90F6D81F6286FE009C6991 /* RTAExchangeOperationImpl.m */; };
+		ECB6E6AF1F543EA900760C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB6E6AE1F543EA900760C39 /* main.m */; };
+		ECB6E6B21F543EA900760C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB6E6B11F543EA900760C39 /* AppDelegate.m */; };
+		ECB6E6B81F543EA900760C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB6E6B61F543EA900760C39 /* Main.storyboard */; };
+		ECB6E6BA1F543EA900760C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB6E6B91F543EA900760C39 /* Assets.xcassets */; };
+		ECB6E6BD1F543EA900760C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB6E6BB1F543EA900760C39 /* LaunchScreen.storyboard */; };
+		ECDA8D471F6FD97D00E39ACC /* NSError+RTA.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA8D461F6FD97D00E39ACC /* NSError+RTA.m */; };
+		ECDA8D4A1F702AE500E39ACC /* NSString+NSDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA8D491F702AE500E39ACC /* NSString+NSDecimalNumber.m */; };
+		ECDA8D4E1F718C2B00E39ACC /* RTANetworkDataTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA8D4D1F718C2B00E39ACC /* RTANetworkDataTransport.m */; };
+		ECDA8D521F71B19A00E39ACC /* RTANetworkDataTransport+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA8D511F71B19A00E39ACC /* RTANetworkDataTransport+Testing.m */; };
+		ECDA8D561F71BB1C00E39ACC /* RTACurrencyExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA8D551F71BB1C00E39ACC /* RTACurrencyExchangeViewController.m */; };
+		ECDA8D591F71BDF400E39ACC /* RTACurrencyExchangeViewController+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA8D581F71BDF400E39ACC /* RTACurrencyExchangeViewController+UITableView.m */; };
+		ECDA8D5C1F71C08900E39ACC /* RTACurrencyExchangeViewController+RTACurrencyAccountsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA8D5B1F71C08900E39ACC /* RTACurrencyExchangeViewController+RTACurrencyAccountsCell.m */; };
+		ECDB3C321F6EB303002A9DC2 /* NSArray+KVOMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB3C311F6EB303002A9DC2 /* NSArray+KVOMutableArray.m */; };
+		ECDDD9BA1F6531DB00E4E435 /* RTABlockerController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDDD9B91F6531DB00E4E435 /* RTABlockerController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC46FE501F58517C00A71521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECB6E6A21F543EA900760C39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECB6E6A91F543EA900760C39;
+			remoteInfo = RevolutTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58D6D183CB71CCA25F661F4A /* Pods_RevolutTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevolutTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32240A477204DCB10711196 /* Pods-RevolutTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevolutTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevolutTestApp/Pods-RevolutTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EC46FE161F5458EB00A71521 /* RTACurrencyImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTACurrencyImpl.m; sourceTree = "<group>"; };
+		EC46FE191F56F96100A71521 /* RTARevolutService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTARevolutService.h; sourceTree = "<group>"; };
+		EC46FE1A1F56F96100A71521 /* RTARevolutService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTARevolutService.m; sourceTree = "<group>"; };
+		EC46FE1C1F57048E00A71521 /* RTACurrencyAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTACurrencyAccount.h; sourceTree = "<group>"; };
+		EC46FE401F57F77000A71521 /* RTACurrencyAccountImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTACurrencyAccountImpl.h; sourceTree = "<group>"; };
+		EC46FE411F57F77000A71521 /* RTACurrencyAccountImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTACurrencyAccountImpl.m; sourceTree = "<group>"; };
+		EC46FE441F58279800A71521 /* NSDecimalNumber+Comparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+Comparison.h"; sourceTree = "<group>"; };
+		EC46FE451F58279800A71521 /* NSDecimalNumber+Comparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+Comparison.m"; sourceTree = "<group>"; };
+		EC46FE4B1F58517C00A71521 /* RevolutTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevolutTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC46FE4D1F58517C00A71521 /* RevolutTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RevolutTestAppTests.m; sourceTree = "<group>"; };
+		EC46FE4F1F58517C00A71521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC46FE561F585EE700A71521 /* NSNumber+NSDecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NSDecimalNumber.h"; sourceTree = "<group>"; };
+		EC46FE571F585EE700A71521 /* NSNumber+NSDecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+NSDecimalNumber.m"; sourceTree = "<group>"; };
+		EC792DCE1F6435F300B09134 /* UIColor+RTADesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RTADesign.h"; sourceTree = "<group>"; };
+		EC792DCF1F6435F300B09134 /* UIColor+RTADesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RTADesign.m"; sourceTree = "<group>"; };
+		EC855F211F6BF8E3002FBE57 /* NSDecimalNumber+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+Addition.h"; sourceTree = "<group>"; };
+		EC855F221F6BF8E3002FBE57 /* NSDecimalNumber+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+Addition.m"; sourceTree = "<group>"; };
+		EC855F271F6C29A6002FBE57 /* RTANumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTANumberFormatter.h; sourceTree = "<group>"; };
+		EC855F281F6C29A6002FBE57 /* RTANumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTANumberFormatter.m; sourceTree = "<group>"; };
+		EC855F2D1F6D0EDF002FBE57 /* RTACurrencyAccountsCell+UIKeyInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTACurrencyAccountsCell+UIKeyInput.h"; sourceTree = "<group>"; };
+		EC855F2E1F6D0EDF002FBE57 /* RTACurrencyAccountsCell+UIKeyInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTACurrencyAccountsCell+UIKeyInput.m"; sourceTree = "<group>"; };
+		EC855F341F6D2E79002FBE57 /* RTAExchangeInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAExchangeInformationCell.h; sourceTree = "<group>"; };
+		EC855F351F6D2E79002FBE57 /* RTAExchangeInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAExchangeInformationCell.m; sourceTree = "<group>"; };
+		EC90F6CB1F595722009C6991 /* RTACurrencyAccountsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTACurrencyAccountsCell.h; sourceTree = "<group>"; };
+		EC90F6CC1F595722009C6991 /* RTACurrencyAccountsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTACurrencyAccountsCell.m; sourceTree = "<group>"; };
+		EC90F6CE1F61140B009C6991 /* RTACurrencyAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTACurrencyAccountView.h; sourceTree = "<group>"; };
+		EC90F6CF1F61140B009C6991 /* RTACurrencyAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTACurrencyAccountView.m; sourceTree = "<group>"; };
+		EC90F6D11F611424009C6991 /* RTACurrencyAccountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTACurrencyAccountView.xib; sourceTree = "<group>"; };
+		EC90F6D31F613652009C6991 /* UIView+Reusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Reusable.h"; sourceTree = "<group>"; };
+		EC90F6D41F613652009C6991 /* UIView+Reusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Reusable.m"; sourceTree = "<group>"; };
+		EC90F6D61F613BAE009C6991 /* RevoluteTestApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevoluteTestApp_Prefix.pch; sourceTree = "<group>"; };
+		EC90F6D71F6286FE009C6991 /* RTAExchangeOperationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAExchangeOperationImpl.h; sourceTree = "<group>"; };
+		EC90F6D81F6286FE009C6991 /* RTAExchangeOperationImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAExchangeOperationImpl.m; sourceTree = "<group>"; };
+		EC90F6DA1F629001009C6991 /* RTAExchangeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAExchangeOperation.h; sourceTree = "<group>"; };
+		ECB6E6AA1F543EA900760C39 /* RevolutTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevolutTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB6E6AE1F543EA900760C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECB6E6B01F543EA900760C39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECB6E6B11F543EA900760C39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECB6E6B71F543EA900760C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECB6E6B91F543EA900760C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECB6E6BC1F543EA900760C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECB6E6BE1F543EA900760C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB6E6C51F544AD600760C39 /* RTACurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTACurrency.h; sourceTree = "<group>"; };
+		ECB6E6C81F54583B00760C39 /* RTACurrencyImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTACurrencyImpl.h; sourceTree = "<group>"; };
+		ECDA8D451F6FD97D00E39ACC /* NSError+RTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+RTA.h"; sourceTree = "<group>"; };
+		ECDA8D461F6FD97D00E39ACC /* NSError+RTA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+RTA.m"; sourceTree = "<group>"; };
+		ECDA8D481F702AE500E39ACC /* NSString+NSDecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSDecimalNumber.h"; sourceTree = "<group>"; };
+		ECDA8D491F702AE500E39ACC /* NSString+NSDecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSDecimalNumber.m"; sourceTree = "<group>"; };
+		ECDA8D4B1F718A8A00E39ACC /* RTADataTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTADataTransport.h; sourceTree = "<group>"; };
+		ECDA8D4C1F718C2B00E39ACC /* RTANetworkDataTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTANetworkDataTransport.h; sourceTree = "<group>"; };
+		ECDA8D4D1F718C2B00E39ACC /* RTANetworkDataTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTANetworkDataTransport.m; sourceTree = "<group>"; };
+		ECDA8D501F71B19A00E39ACC /* RTANetworkDataTransport+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTANetworkDataTransport+Testing.h"; sourceTree = "<group>"; };
+		ECDA8D511F71B19A00E39ACC /* RTANetworkDataTransport+Testing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTANetworkDataTransport+Testing.m"; sourceTree = "<group>"; };
+		ECDA8D541F71BB1C00E39ACC /* RTACurrencyExchangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTACurrencyExchangeViewController.h; sourceTree = "<group>"; };
+		ECDA8D551F71BB1C00E39ACC /* RTACurrencyExchangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTACurrencyExchangeViewController.m; sourceTree = "<group>"; };
+		ECDA8D571F71BDF400E39ACC /* RTACurrencyExchangeViewController+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTACurrencyExchangeViewController+UITableView.h"; sourceTree = "<group>"; };
+		ECDA8D581F71BDF400E39ACC /* RTACurrencyExchangeViewController+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTACurrencyExchangeViewController+UITableView.m"; sourceTree = "<group>"; };
+		ECDA8D5A1F71C08900E39ACC /* RTACurrencyExchangeViewController+RTACurrencyAccountsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTACurrencyExchangeViewController+RTACurrencyAccountsCell.h"; sourceTree = "<group>"; };
+		ECDA8D5B1F71C08900E39ACC /* RTACurrencyExchangeViewController+RTACurrencyAccountsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTACurrencyExchangeViewController+RTACurrencyAccountsCell.m"; sourceTree = "<group>"; };
+		ECDB3C301F6EB303002A9DC2 /* NSArray+KVOMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+KVOMutableArray.h"; sourceTree = "<group>"; };
+		ECDB3C311F6EB303002A9DC2 /* NSArray+KVOMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KVOMutableArray.m"; sourceTree = "<group>"; };
+		ECDDD9B81F6531DB00E4E435 /* RTABlockerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTABlockerController.h; sourceTree = "<group>"; };
+		ECDDD9B91F6531DB00E4E435 /* RTABlockerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTABlockerController.m; sourceTree = "<group>"; };
+		FCA424C4D7A9207FD2060A45 /* Pods-RevolutTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevolutTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevolutTestApp/Pods-RevolutTestApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC46FE481F58517C00A71521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB6E6A71F543EA900760C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E378BBBE4A80720D3CEEDB1 /* Pods_RevolutTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089205198B2BB63EE87B6E67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E32240A477204DCB10711196 /* Pods-RevolutTestApp.debug.xcconfig */,
+				FCA424C4D7A9207FD2060A45 /* Pods-RevolutTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5AF278D6C4F635798FD1FC7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58D6D183CB71CCA25F661F4A /* Pods_RevolutTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC46FE431F58275A00A71521 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC46FE441F58279800A71521 /* NSDecimalNumber+Comparison.h */,
+				EC46FE451F58279800A71521 /* NSDecimalNumber+Comparison.m */,
+				EC46FE561F585EE700A71521 /* NSNumber+NSDecimalNumber.h */,
+				EC46FE571F585EE700A71521 /* NSNumber+NSDecimalNumber.m */,
+				EC90F6D31F613652009C6991 /* UIView+Reusable.h */,
+				EC90F6D41F613652009C6991 /* UIView+Reusable.m */,
+				EC792DCE1F6435F300B09134 /* UIColor+RTADesign.h */,
+				EC792DCF1F6435F300B09134 /* UIColor+RTADesign.m */,
+				EC855F211F6BF8E3002FBE57 /* NSDecimalNumber+Addition.h */,
+				EC855F221F6BF8E3002FBE57 /* NSDecimalNumber+Addition.m */,
+				EC855F271F6C29A6002FBE57 /* RTANumberFormatter.h */,
+				EC855F281F6C29A6002FBE57 /* RTANumberFormatter.m */,
+				EC855F2D1F6D0EDF002FBE57 /* RTACurrencyAccountsCell+UIKeyInput.h */,
+				EC855F2E1F6D0EDF002FBE57 /* RTACurrencyAccountsCell+UIKeyInput.m */,
+				ECDB3C301F6EB303002A9DC2 /* NSArray+KVOMutableArray.h */,
+				ECDB3C311F6EB303002A9DC2 /* NSArray+KVOMutableArray.m */,
+				ECDA8D451F6FD97D00E39ACC /* NSError+RTA.h */,
+				ECDA8D461F6FD97D00E39ACC /* NSError+RTA.m */,
+				ECDA8D481F702AE500E39ACC /* NSString+NSDecimalNumber.h */,
+				ECDA8D491F702AE500E39ACC /* NSString+NSDecimalNumber.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EC46FE4C1F58517C00A71521 /* RevolutTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC46FE4D1F58517C00A71521 /* RevolutTestAppTests.m */,
+				EC46FE4F1F58517C00A71521 /* Info.plist */,
+			);
+			path = RevolutTestAppTests;
+			sourceTree = "<group>";
+		};
+		EC90F6CA1F5956B2009C6991 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC90F6CB1F595722009C6991 /* RTACurrencyAccountsCell.h */,
+				EC90F6CC1F595722009C6991 /* RTACurrencyAccountsCell.m */,
+				EC90F6CE1F61140B009C6991 /* RTACurrencyAccountView.h */,
+				EC90F6CF1F61140B009C6991 /* RTACurrencyAccountView.m */,
+				EC90F6D11F611424009C6991 /* RTACurrencyAccountView.xib */,
+				EC855F341F6D2E79002FBE57 /* RTAExchangeInformationCell.h */,
+				EC855F351F6D2E79002FBE57 /* RTAExchangeInformationCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ECB6E6A11F543EA900760C39 = {
+			isa = PBXGroup;
+			children = (
+				ECB6E6AC1F543EA900760C39 /* RevolutTestApp */,
+				EC46FE4C1F58517C00A71521 /* RevolutTestAppTests */,
+				ECB6E6AB1F543EA900760C39 /* Products */,
+				089205198B2BB63EE87B6E67 /* Pods */,
+				5AF278D6C4F635798FD1FC7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECB6E6AB1F543EA900760C39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECB6E6AA1F543EA900760C39 /* RevolutTestApp.app */,
+				EC46FE4B1F58517C00A71521 /* RevolutTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECB6E6AC1F543EA900760C39 /* RevolutTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				EC46FE431F58275A00A71521 /* Utilities */,
+				ECB6E6B01F543EA900760C39 /* AppDelegate.h */,
+				ECB6E6B11F543EA900760C39 /* AppDelegate.m */,
+				ECB6E6B61F543EA900760C39 /* Main.storyboard */,
+				ECB6E6B91F543EA900760C39 /* Assets.xcassets */,
+				ECB6E6BB1F543EA900760C39 /* LaunchScreen.storyboard */,
+				ECB6E6BE1F543EA900760C39 /* Info.plist */,
+				ECDA8D531F71BB1C00E39ACC /* ViewControllers */,
+				EC90F6CA1F5956B2009C6991 /* Views */,
+				ECB6E6C41F544AA900760C39 /* Model */,
+				ECB6E6AD1F543EA900760C39 /* Supporting Files */,
+				ECDA8D4F1F71B0D700E39ACC /* Testing */,
+				ECDDD9B81F6531DB00E4E435 /* RTABlockerController.h */,
+				ECDDD9B91F6531DB00E4E435 /* RTABlockerController.m */,
+			);
+			path = RevolutTestApp;
+			sourceTree = "<group>";
+		};
+		ECB6E6AD1F543EA900760C39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECB6E6AE1F543EA900760C39 /* main.m */,
+				EC90F6D61F613BAE009C6991 /* RevoluteTestApp_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECB6E6C41F544AA900760C39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECB6E6C51F544AD600760C39 /* RTACurrency.h */,
+				ECB6E6C81F54583B00760C39 /* RTACurrencyImpl.h */,
+				EC46FE161F5458EB00A71521 /* RTACurrencyImpl.m */,
+				EC46FE191F56F96100A71521 /* RTARevolutService.h */,
+				EC46FE1A1F56F96100A71521 /* RTARevolutService.m */,
+				EC46FE1C1F57048E00A71521 /* RTACurrencyAccount.h */,
+				EC46FE401F57F77000A71521 /* RTACurrencyAccountImpl.h */,
+				EC46FE411F57F77000A71521 /* RTACurrencyAccountImpl.m */,
+				EC90F6D71F6286FE009C6991 /* RTAExchangeOperationImpl.h */,
+				EC90F6D81F6286FE009C6991 /* RTAExchangeOperationImpl.m */,
+				EC90F6DA1F629001009C6991 /* RTAExchangeOperation.h */,
+				ECDA8D4B1F718A8A00E39ACC /* RTADataTransport.h */,
+				ECDA8D4C1F718C2B00E39ACC /* RTANetworkDataTransport.h */,
+				ECDA8D4D1F718C2B00E39ACC /* RTANetworkDataTransport.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECDA8D4F1F71B0D700E39ACC /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA8D501F71B19A00E39ACC /* RTANetworkDataTransport+Testing.h */,
+				ECDA8D511F71B19A00E39ACC /* RTANetworkDataTransport+Testing.m */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		ECDA8D531F71BB1C00E39ACC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA8D541F71BB1C00E39ACC /* RTACurrencyExchangeViewController.h */,
+				ECDA8D551F71BB1C00E39ACC /* RTACurrencyExchangeViewController.m */,
+				ECDA8D571F71BDF400E39ACC /* RTACurrencyExchangeViewController+UITableView.h */,
+				ECDA8D581F71BDF400E39ACC /* RTACurrencyExchangeViewController+UITableView.m */,
+				ECDA8D5A1F71C08900E39ACC /* RTACurrencyExchangeViewController+RTACurrencyAccountsCell.h */,
+				ECDA8D5B1F71C08900E39ACC /* RTACurrencyExchangeViewController+RTACurrencyAccountsCell.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC46FE4A1F58517C00A71521 /* RevolutTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC46FE521F58517C00A71521 /* Build configuration list for PBXNativeTarget "RevolutTestAppTests" */;
+			buildPhases = (
+				EC46FE471F58517C00A71521 /* Sources */,
+				EC46FE481F58517C00A71521 /* Frameworks */,
+				EC46FE491F58517C00A71521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC46FE511F58517C00A71521 /* PBXTargetDependency */,
+			);
+			name = RevolutTestAppTests;
+			productName = RevolutTestAppTests;
+			productReference = EC46FE4B1F58517C00A71521 /* RevolutTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECB6E6A91F543EA900760C39 /* RevolutTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECB6E6C11F543EA900760C39 /* Build configuration list for PBXNativeTarget "RevolutTestApp" */;
+			buildPhases = (
+				0C055F7769B1F6516A767CB4 /* [CP] Check Pods Manifest.lock */,
+				ECB6E6A61F543EA900760C39 /* Sources */,
+				ECB6E6A71F543EA900760C39 /* Frameworks */,
+				ECB6E6A81F543EA900760C39 /* Resources */,
+				E0AFCCDCD3F405378EC5F3F9 /* [CP] Embed Pods Frameworks */,
+				16A9701D4AE03815FDE90A52 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevolutTestApp;
+			productName = RevolutTestApp;
+			productReference = ECB6E6AA1F543EA900760C39 /* RevolutTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECB6E6A21F543EA900760C39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RTA;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LSV;
+				TargetAttributes = {
+					EC46FE4A1F58517C00A71521 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 22DK3QZ24R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ECB6E6A91F543EA900760C39;
+					};
+					ECB6E6A91F543EA900760C39 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 22DK3QZ24R;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ECB6E6A51F543EA900760C39 /* Build configuration list for PBXProject "RevolutTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECB6E6A11F543EA900760C39;
+			productRefGroup = ECB6E6AB1F543EA900760C39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECB6E6A91F543EA900760C39 /* RevolutTestApp */,
+				EC46FE4A1F58517C00A71521 /* RevolutTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC46FE491F58517C00A71521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB6E6A81F543EA900760C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB6E6BD1F543EA900760C39 /* LaunchScreen.storyboard in Resources */,
+				EC90F6D21F611424009C6991 /* RTACurrencyAccountView.xib in Resources */,
+				ECB6E6BA1F543EA900760C39 /* Assets.xcassets in Resources */,
+				ECB6E6B81F543EA900760C39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C055F7769B1F6516A767CB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevolutTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16A9701D4AE03815FDE90A52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RevolutTestApp/Pods-RevolutTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0AFCCDCD3F405378EC5F3F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RevolutTestApp/Pods-RevolutTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/JRSwizzle/JRSwizzle.framework",
+				"${BUILT_PRODUCTS_DIR}/KVOMutableArray/KVOMutableArray.framework",
+				"${BUILT_PRODUCTS_DIR}/XMLDictionary/XMLDictionary.framework",
+				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JRSwizzle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOMutableArray.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLDictionary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RevolutTestApp/Pods-RevolutTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC46FE471F58517C00A71521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC46FE551F58570500A71521 /* RTACurrencyAccountImpl.m in Sources */,
+				EC46FE4E1F58517C00A71521 /* RevolutTestAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB6E6A61F543EA900760C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDA8D4E1F718C2B00E39ACC /* RTANetworkDataTransport.m in Sources */,
+				EC90F6D91F6286FE009C6991 /* RTAExchangeOperationImpl.m in Sources */,
+				EC855F361F6D2E79002FBE57 /* RTAExchangeInformationCell.m in Sources */,
+				ECDA8D5C1F71C08900E39ACC /* RTACurrencyExchangeViewController+RTACurrencyAccountsCell.m in Sources */,
+				EC855F2F1F6D0EDF002FBE57 /* RTACurrencyAccountsCell+UIKeyInput.m in Sources */,
+				EC46FE421F57F77000A71521 /* RTACurrencyAccountImpl.m in Sources */,
+				EC90F6D01F61140B009C6991 /* RTACurrencyAccountView.m in Sources */,
+				EC855F291F6C29A6002FBE57 /* RTANumberFormatter.m in Sources */,
+				EC46FE171F5458EB00A71521 /* RTACurrencyImpl.m in Sources */,
+				ECDA8D521F71B19A00E39ACC /* RTANetworkDataTransport+Testing.m in Sources */,
+				ECDA8D561F71BB1C00E39ACC /* RTACurrencyExchangeViewController.m in Sources */,
+				EC46FE581F585EE700A71521 /* NSNumber+NSDecimalNumber.m in Sources */,
+				ECDB3C321F6EB303002A9DC2 /* NSArray+KVOMutableArray.m in Sources */,
+				ECB6E6B21F543EA900760C39 /* AppDelegate.m in Sources */,
+				EC855F231F6BF8E3002FBE57 /* NSDecimalNumber+Addition.m in Sources */,
+				EC90F6D51F613652009C6991 /* UIView+Reusable.m in Sources */,
+				ECDA8D4A1F702AE500E39ACC /* NSString+NSDecimalNumber.m in Sources */,
+				ECDA8D471F6FD97D00E39ACC /* NSError+RTA.m in Sources */,
+				ECB6E6AF1F543EA900760C39 /* main.m in Sources */,
+				ECDA8D591F71BDF400E39ACC /* RTACurrencyExchangeViewController+UITableView.m in Sources */,
+				EC46FE461F58279800A71521 /* NSDecimalNumber+Comparison.m in Sources */,
+				ECDDD9BA1F6531DB00E4E435 /* RTABlockerController.m in Sources */,
+				EC90F6CD1F595722009C6991 /* RTACurrencyAccountsCell.m in Sources */,
+				EC792DD01F6435F300B09134 /* UIColor+RTADesign.m in Sources */,
+				EC46FE1B1F56F96100A71521 /* RTARevolutService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC46FE511F58517C00A71521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECB6E6A91F543EA900760C39 /* RevolutTestApp */;
+			targetProxy = EC46FE501F58517C00A71521 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECB6E6B61F543EA900760C39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB6E6B71F543EA900760C39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECB6E6BB1F543EA900760C39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB6E6BC1F543EA900760C39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC46FE531F58517C00A71521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 22DK3QZ24R;
+				INFOPLIST_FILE = RevolutTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lsv.ru.RevolutTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RevolutTestApp.app/RevolutTestApp";
+			};
+			name = Debug;
+		};
+		EC46FE541F58517C00A71521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 22DK3QZ24R;
+				INFOPLIST_FILE = RevolutTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lsv.ru.RevolutTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RevolutTestApp.app/RevolutTestApp";
+			};
+			name = Release;
+		};
+		ECB6E6BF1F543EA900760C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECB6E6C01F543EA900760C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECB6E6C21F543EA900760C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32240A477204DCB10711196 /* Pods-RevolutTestApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22DK3QZ24R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/RevolutTestApp/RevoluteTestApp_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = RevolutTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lsv.ru.RevolutTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECB6E6C31F543EA900760C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA424C4D7A9207FD2060A45 /* Pods-RevolutTestApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22DK3QZ24R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/RevolutTestApp/RevoluteTestApp_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = RevolutTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lsv.ru.RevolutTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC46FE521F58517C00A71521 /* Build configuration list for PBXNativeTarget "RevolutTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC46FE531F58517C00A71521 /* Debug */,
+				EC46FE541F58517C00A71521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECB6E6A51F543EA900760C39 /* Build configuration list for PBXProject "RevolutTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB6E6BF1F543EA900760C39 /* Debug */,
+				ECB6E6C01F543EA900760C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECB6E6C11F543EA900760C39 /* Build configuration list for PBXNativeTarget "RevolutTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECB6E6C21F543EA900760C39 /* Debug */,
+				ECB6E6C31F543EA900760C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECB6E6A21F543EA900760C39 /* Project object */;
+}

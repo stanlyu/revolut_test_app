@@ -1,0 +1,29 @@
+//
+//  RTANetworkDataTransport+Testing.h
+//  RevolutTestApp
+//
+//  Created by Stanislav on 19.09.17.
+//  Copyright © 2017 LSV. All rights reserved.
+//
+
+#import "RTANetworkDataTransport.h"
+
+//#define RTANDT_LOAD_CURRENCIES_INSTANTLY
+//#define RTANDT_LOAD_CURRENCIES_FOR_SOME_TIME
+//#define RTANDT_LOAD_CURRENCIES_WITH_ERROR_INSTANTLY
+//#define RTANDT_LOAD_CURRENCIES_WITH_ERROR_FOR_SOME_TIME
+//#define RTANDT_LOAD_CURRENCIES_FIRST_WITH_ERROR_THEN_SUCCESSFULLY
+//#define RTANDT_LOAD_CURRENCIES_RANDOMLY
+
+#if defined(RTANDT_LOAD_CURRENCIES_INSTANTLY) || \
+    defined(RTANDT_LOAD_CURRENCIES_FOR_SOME_TIME) || \
+    defined(RTANDT_LOAD_CURRENCIES_WITH_ERROR_INSTANTLY) || \
+    defined(RTANDT_LOAD_CURRENCIES_WITH_ERROR_FOR_SOME_TIME) || \
+    defined(RTANDT_LOAD_CURRENCIES_FIRST_WITH_ERROR_THEN_SUCCESSFULLY) || \
+    defined(RTANDT_LOAD_CURRENCIES_RANDOMLY)
+
+@interface RTANetworkDataTransport (Testing)
+
+@end
+
+#endif
