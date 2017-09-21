@@ -87,7 +87,16 @@ static NSString * const amountOfReplenishmentKey = @"amountOfReplenishment";
         _amountCharged = amountCharged;
         [self didChangeValueForKey:amountChargedKey];
         [self willChangeValueForKey:amountOfReplenishmentKey];
-        _amountOfReplenishment = [_amountCharged decimalNumberByMultiplyingBy:[self expenseReplenishmentRate]];
+        @try {
+            _amountOfReplenishment = [_amountCharged decimalNumberByMultiplyingBy:[self expenseReplenishmentRate]];
+        } @catch (NSException *exception) {
+            _amountCharged = DN(0);
+            _amountOfReplenishment = DN(0);
+            if ([_delegate conformsToProtocol:@protocol(RTAExchangeOperationDelegate)]) {
+                [_delegate exchangeOperationDidChange:self];
+            }
+        }
+        
         [self didChangeValueForKey:amountOfReplenishmentKey];
         
     }
@@ -104,7 +113,15 @@ static NSString * const amountOfReplenishmentKey = @"amountOfReplenishment";
         _amountOfReplenishment = amountOfReplenishment;
         [self didChangeValueForKey:amountOfReplenishmentKey];
         [self willChangeValueForKey:amountChargedKey];
-        _amountCharged = [_amountOfReplenishment decimalNumberByDividingBy:[self expenseReplenishmentRate]];
+        @try {
+            _amountCharged = [_amountOfReplenishment decimalNumberByDividingBy:[self expenseReplenishmentRate]];
+        } @catch (NSException *exception) {
+            _amountCharged = DN(0);
+            _amountOfReplenishment = DN(0);
+            if ([_delegate conformsToProtocol:@protocol(RTAExchangeOperationDelegate)]) {
+                [_delegate exchangeOperationDidChange:self];
+            }
+        }
         [self didChangeValueForKey:amountChargedKey];
 
     }
